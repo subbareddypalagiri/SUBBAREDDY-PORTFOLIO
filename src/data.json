@@ -1,0 +1,149 @@
+{
+  "profile": {
+    "firstName": "SUBBA REDDY",
+    "lastName": "PALAGIRI",
+    "title": "Creative Developer",
+    "description": "Passionate Web Developer crafting modern, interactive and premium digital experiences with creative UI animations.",
+    "avatarUrl": "/hero_avatar.png"
+  },
+  "socials": [
+    {
+      "platform": "whatsapp",
+      "icon": "fab fa-whatsapp",
+      "color": "text-green-500",
+      "link": "https://wa.me/919493811060"
+    },
+    {
+      "platform": "instagram",
+      "icon": "fab fa-instagram",
+      "color": "text-pink-500",
+      "link": "https://www.instagram.com/being_subbu___/"
+    },
+    {
+      "platform": "linkedin",
+      "icon": "fab fa-linkedin-in",
+      "color": "text-blue-500",
+      "link": "https://www.linkedin.com/in/subba-reddy-palagiri-3686b9342"
+    },
+    {
+      "platform": "github",
+      "icon": "fab fa-github",
+      "color": "text-white",
+      "link": "https://github.com/subbareddypalagiri"
+    }
+  ],
+  "skills": [
+    {
+      "icon": "fa-brands fa-react",
+      "title": "React.js & Next.js",
+      "desc": "Front-end Frameworks"
+    },
+    {
+      "icon": "fa-brands fa-node-js",
+      "title": "Node.js & Express",
+      "desc": "Back-end Development"
+    },
+    {
+      "icon": "fa-brands fa-python",
+      "title": "Python & NLP",
+      "desc": "AI / ML & APIs"
+    },
+    {
+      "icon": "fa-solid fa-database",
+      "title": "MongoDB & PostgreSQL",
+      "desc": "Database Management"
+    },
+    {
+      "icon": "fa-brands fa-git-alt",
+      "title": "Git & GitHub Actions",
+      "desc": "CI/CD & Version Control"
+    },
+    {
+      "icon": "fa-brands fa-js",
+      "title": "JavaScript (ES2022+)",
+      "desc": "Core Language"
+    }
+  ],
+  "achievements": [
+    {
+      "icon": "fa-solid fa-graduation-cap",
+      "title": "Mohan Babu University",
+      "desc": "B.Tech CS (9.0 CGPA)"
+    },
+    {
+      "icon": "fa-brands fa-github",
+      "title": "Open Source",
+      "desc": "Merged PR in sindresorhus/awesome"
+    },
+    {
+      "icon": "fa-solid fa-code",
+      "title": "LeetCode Badge",
+      "desc": "100 Days Badge (2026)"
+    },
+    {
+      "icon": "fa-solid fa-book-open",
+      "title": "Prompt Engineering",
+      "desc": "RAG & LLM Integration"
+    }
+  ],
+  "expertise": [
+    {
+      "icon": "fa-solid fa-layer-group",
+      "title": "FULL-STACK",
+      "description": "Building dynamic, responsive web applications using React.js, Next.js, and Node.js."
+    },
+    {
+      "icon": "fa-solid fa-microchip",
+      "title": "AI INTEGRATION",
+      "description": "Engineering intelligent tools and assistants using LLM APIs (OpenAI, Gemini) and RAG architectures."
+    },
+    {
+      "icon": "fa-solid fa-server",
+      "title": "BACKEND & APIS",
+      "description": "Designing robust REST APIs, CI/CD pipelines, and secure database schemas with MongoDB."
+    },
+    {
+      "icon": "fa-solid fa-wand-magic-sparkles",
+      "title": "PROMPT ENGINEERING",
+      "description": "Optimizing AI contexts, validation rules, and structuring NLP outputs for precise applications."
+    }
+  ],
+  "projects": [
+    {
+      "title": "HAAPPY",
+      "description": "Student Mentorship Platform (React, Node, MongoDB)",
+      "icon": "fa-solid fa-users",
+      "color": "#22c55e",
+      "link": "https://skillverse-play-learn-wzcb.vercel.app/",
+      "colSpan": "md:col-span-2",
+      "rowSpan": "md:row-span-2"
+    },
+    {
+      "title": "YAMA AI",
+      "description": "Legal Query Assistant built with Python and Gemini APIs.",
+      "icon": "fa-solid fa-scale-balanced",
+      "color": "#eab308",
+      "link": "https://github.com/subbareddypalagiri/Yama--ai",
+      "colSpan": "md:col-span-1",
+      "rowSpan": ""
+    },
+    {
+      "title": "SARA",
+      "description": "Spot-fix AI Writing Assistant (RAG).",
+      "icon": "fa-solid fa-wand-magic-sparkles",
+      "color": "#a855f7",
+      "link": "https://github.com/subbareddypalagiri/SARA-01",
+      "colSpan": "md:col-span-1",
+      "rowSpan": ""
+    },
+    {
+      "title": "SYN-NEX",
+      "description": "AI Prompt Optimization Chrome Extension.",
+      "icon": "fa-brands fa-chrome",
+      "color": "#3b82f6",
+      "link": "https://github.com/subbareddypalagiri/Syn-nex",
+      "colSpan": "md:col-span-2",
+      "rowSpan": ""
+    }
+  ]
+}
