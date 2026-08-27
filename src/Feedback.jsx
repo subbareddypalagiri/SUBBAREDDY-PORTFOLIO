@@ -58,7 +58,7 @@ export default function Feedback() {
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
                     className="w-full bg-black/50 border border-white/10 rounded-xl p-4 text-white focus:outline-none focus:border-purple-500 transition-colors"
-                    placeholder="John Doe"
+                    placeholder="Your name..."
                   />
                 </div>
                 <div className="flex-1">
@@ -69,7 +69,7 @@ export default function Feedback() {
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
                     className="w-full bg-black/50 border border-white/10 rounded-xl p-4 text-white focus:outline-none focus:border-purple-500 transition-colors"
-                    placeholder="john@example.com"
+                    placeholder="your@email.com"
                   />
                 </div>
               </div>
@@ -94,7 +94,7 @@ export default function Feedback() {
                   value={formData.message}
                   onChange={(e) => setFormData({...formData, message: e.target.value})}
                   className="w-full bg-black/50 border border-white/10 rounded-xl p-4 text-white focus:outline-none focus:border-purple-500 transition-colors h-32 resize-none"
-                  placeholder="Your website is amazing!"
+                  placeholder="Share your thoughts about my portfolio..."
                 ></textarea>
               </div>
 
