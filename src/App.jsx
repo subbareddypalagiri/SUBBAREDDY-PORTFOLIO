@@ -9,6 +9,7 @@ import Admin from './Admin.jsx'
 import Feedback from './Feedback.jsx'
 import Portfolios from './Portfolios.jsx'
 import Gallery from './Gallery.jsx'
+import { RevealText } from './components/ui/reveal-text'
 import portfolioData from './data.json'
 
 gsap.registerPlugin(ScrollTrigger);
@@ -393,9 +394,33 @@ const Home = () => {
 
       {/* PAGE 1: HERO SECTION */}
       <section id="home" className="hero-section h-screen w-full flex items-center justify-center overflow-hidden transition-colors duration-500 relative" style={{ backgroundColor: bgColor }}>
-        <h1 className="hero-title absolute text-[15vw] font-black leading-none select-none pointer-events-none z-0 uppercase text-transparent whitespace-nowrap" style={{ top: '50%', transform: 'translateY(-50%)', WebkitTextStroke: isYellow ? '3px rgba(0,0,0,0.2)' : '3px rgba(255,255,255,0.2)' }}>
-          PORTFOLIO
-        </h1>
+        <div className="hero-title absolute select-none z-0 uppercase whitespace-nowrap pointer-events-auto"
+          style={{ top: '50%', transform: 'translateY(-50%)', left: '50%', marginLeft: '-50vw', width: '100vw', display: 'flex', justifyContent: 'center' }}>
+          <RevealText
+            text="SUBBAREDDY"
+            textColor="text-transparent"
+            overlayColor={isYellow ? "text-black/50" : "text-white/40"}
+            fontSize="text-[13vw]"
+            letterDelay={0.06}
+            overlayDelay={0.04}
+            overlayDuration={0.35}
+            springDuration={600}
+            gap="1.2vw"
+            textStroke={isYellow ? "2px rgba(0,0,0,0.25)" : "2px rgba(255,255,255,0.25)"}
+            letterImages={[
+              "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=2070&q=80",
+              "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=2070&q=80",
+              "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=2070&q=80",
+              "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=2070&q=80",
+              "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=2070&q=80",
+              "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=2070&q=80",
+              "https://images.unsplash.com/photo-1519904981063-b0cf448d479e?auto=format&fit=crop&w=2070&q=80",
+              "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=2070&q=80",
+              "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=2070&q=80",
+              "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?auto=format&fit=crop&w=2070&q=80",
+            ]}
+          />
+        </div>
 
         <img 
           src={data.profile.avatarUrl} 

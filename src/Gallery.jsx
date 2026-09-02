@@ -1,6 +1,7 @@
 import React, { useRef, useMemo, useState, useCallback, useEffect } from "react";
 import { motion, useScroll, useTransform, useSpring, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
+import { RevealText } from "./components/ui/reveal-text";
 
 // ─── Image pools ─────────────────────────────────────────────────────────────
 const IMAGES = [
@@ -296,10 +297,28 @@ export default function Gallery() {
             transition={{ duration: 0.5 }} className="w-full h-full flex flex-col">
 
             {/* Header */}
-            <div className="pt-20 pb-8 px-10 flex items-end justify-between flex-shrink-0">
+            <div className="pt-16 pb-6 px-10 flex items-end justify-between flex-shrink-0">
               <div>
                 <p className="text-xs font-black tracking-[0.4em] text-white/30 uppercase mb-2">SUBBA REDDY</p>
-                <h1 className="text-6xl md:text-8xl font-black tracking-tighter uppercase leading-none">GALLERY</h1>
+                <RevealText
+                  text="GALLERY"
+                  textColor="text-white"
+                  overlayColor="text-purple-500"
+                  fontSize="text-[clamp(48px,8vw,100px)]"
+                  letterDelay={0.1}
+                  overlayDelay={0.06}
+                  overlayDuration={0.4}
+                  springDuration={700}
+                  letterImages={[
+                    "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=2070&q=80",
+                    "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=2070&q=80",
+                    "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=2070&q=80",
+                    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=2070&q=80",
+                    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=2070&q=80",
+                    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=2070&q=80",
+                    "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?auto=format&fit=crop&w=2070&q=80",
+                  ]}
+                />
               </div>
               <p className="text-white/30 text-sm font-medium tracking-widest uppercase hidden md:block">Select an experience</p>
             </div>
