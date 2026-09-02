@@ -8,6 +8,7 @@ import { Routes, Route, Link } from 'react-router-dom'
 import Admin from './Admin.jsx'
 import Feedback from './Feedback.jsx'
 import Portfolios from './Portfolios.jsx'
+import Gallery from './Gallery.jsx'
 import portfolioData from './data.json'
 
 gsap.registerPlugin(ScrollTrigger);
@@ -373,6 +374,13 @@ const Home = () => {
             </span>
             <i className="fa-solid fa-arrow-right opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500"></i>
           </Link>
+          <Link to="/gallery" className="px-6 py-2.5 font-black text-xs tracking-[0.2em] uppercase rounded-full transition-all duration-500 border-2 border-black text-black hover:bg-black hover:text-white flex items-center gap-2 group">
+            <span className="relative overflow-hidden flex items-center">
+               <span className="group-hover:-translate-y-full transition-transform duration-500 flex">GALLERY</span>
+               <span className="absolute top-full group-hover:-translate-y-full transition-transform duration-500 flex">GALLERY</span>
+            </span>
+            <i className="fa-solid fa-arrow-right opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500"></i>
+          </Link>
           <Link to="/feedback" className="px-6 py-2.5 font-black text-xs tracking-[0.2em] uppercase rounded-full transition-all duration-500 border-2 border-black text-black hover:bg-black hover:text-white flex items-center gap-2 group">
             <span className="relative overflow-hidden flex items-center">
                <span className="group-hover:-translate-y-full transition-transform duration-500 flex">FEEDBACK</span>
@@ -609,6 +617,7 @@ export default function App() {
       <Route path="/admin" element={<Admin />} />
       <Route path="/feedback" element={<Feedback />} />
       <Route path="/portfolios" element={<Portfolios />} />
+      <Route path="/gallery" element={<Gallery />} />
     </Routes>
   );
 }
